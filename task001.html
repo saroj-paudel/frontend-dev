@@ -83,6 +83,116 @@
             width: calc(100% - 210px);
             float: right;
         }
+
+        /* hero section: start  */
+
+        section#hero{
+            background-color: rgb(9, 11, 26);
+            color: rgb(188, 188, 188);
+            background-image: url('sidelook.png');
+            /* background-blend-mode: screen; */
+            background-repeat: no-repeat;
+            background-position: 600px 200px;
+            background-size: 600px;
+            height: 100vh;
+            position: relative;
+        }
+       
+        .upper-hero,address{
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            gap: 110px;
+        }
+        address{
+            font-size: 18px;
+            margin-top: 15px;
+            padding: 10px 30px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .upper-hero button{
+            background-color: orange;
+            color: black;
+            padding: 0 30px;
+            border: none;
+            font-size: 20px;
+        }
+
+        .mid
+    {
+        width: 80%;
+        padding: 20px;
+        color: white;
+        display: flex;
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* line-height: 50px; */
+    align-items: center;
+    justify-content: space-between;
+        
+    }
+    .mid .left{
+        width: 60%;
+    }
+
+    .left h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .left h3{
+        font-weight: 500;
+        margin: 20px 0;
+    }
+    .orange{
+        color: orange;
+    }
+
+    .left button{
+        background-color: orange;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-size: 18px;
+        border: none;
+        margin-top: 35px;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+    }
+
+    .left button:hover{
+        padding: 12px 35px;
+        color: white;
+        box-shadow: 0 5px 15px 5px rgba(6, 6, 112, 0.231);
+    }
+
+    .right .buttons{
+display: flex;
+flex-direction: column;
+gap: 20px;
+    }
+
+    .buttons button{
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.767);
+        color: rgba(255, 255, 255, 0.765);
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        background-color: transparent;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .buttons button:hover{
+        border-radius: 50%;
+        border: 1px solid rgba(255, 166, 0, 0.756);
+        color: rgba(255, 166, 0, 0.763);
+    }
     </style>
 
 </head>
@@ -122,16 +232,16 @@
             <div class="upper-hero">
                 <div class="contact">
                     <address>
-                        <p>9746937199</p>
-                        <p>hi@sarojpaudel.name.np</p>
+                        <p>+977 9746937199</p>
+                        <p>saroj@graphillatechnology.com</p>
                     </address>
                 </div>
-                <button>✉️</button>
+                <button><i class="fa-solid fa-envelope"></i></button>
             </div>
             <div class="mid">
                 <div class="left">
                     <header>
-                        <h1>Saroj Paudel</h1>
+                        <h1>Saroj <span class="orange">Paudel</span></h1>
                         <h3>Frontend Developer</h3>
                     </header>
                     <p>I have been doing nothing since first semester. Just landed on Graphilla Technology.</p>
@@ -139,10 +249,10 @@
                 </div>
                 <div class="right">
                     <div class="buttons">
-                        <button>F</button>
-                        <button>T</button>
-                        <button>P</button>
-                        <button>L</button>
+                        <button><i class="fa-brands fa-facebook-f"></i></button>
+                        <button><i class="fa-solid fa-retweet"></i></button>
+                        <button><i class="fa-brands fa-behance"></i></button>
+                        <button><i class="fa-brands fa-linkedin-in"></i></button>
                     </div>
                 </div>
             </div>
