@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saroj Paudel | Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+
+/* sidebar style: start */
+        .sidebar {
+            position: fixed;
+            height: 100vh;
+            background-color: rgb(18, 27, 58);
+            width: 210px;
+        }
+
+        .upper {
+            background-color: aliceblue;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .upper img {
+            height: 160px;
+            scale: 1.08;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        p.name {
+            background-color: orange;
+            padding: 10px 0;
+        }
+
+        .header-box>p {
+            color: rgb(159, 158, 158);
+            margin-top: 13px;
+            font-size: 17px;
+            text-align: center;
+        }
+
+
+        li {
+            padding: 10px 40px;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        li:hover a {
+            color: rgb(253, 189, 71);
+        }
+        
+        li a i {
+            margin-right: 10px;
+        }
+/* sidebar style: end */
+
+
+
+        section,footer {
+            width: calc(100% - 210px);
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <div class="header-box">
+            <div class="upper">
+                <img src="pp-transparent.png" alt="saroj-paudel-profile-picture">
+                <p class="name">Saroj Paudel</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-circle-info"></i>About</a></li>
+                    <li><a href=""><i class="fa-solid fa-book"></i>Service</a></li>
+                    <li><a href=""><i class="fa-solid fa-suitcase"></i>Portfolio</a></li>
+                    <li><a href=""><i class="fa-solid fa-quote-left"></i>Testimonial</a></li>
+                    <li><a href=""><i class="fa-solid fa-blog"></i>Blog</a></li>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i>Contact</a></li>
+
+                </ul>
+            </nav>
+            <p>Copyright &copy; Saroj</p>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- main start -->
+    <main>
+
+        <!-- hero section: begin -->
+        <section id="hero">
+            <div class="upper-hero">
+                <div class="contact">
+                    <address>
+                        <p>9746937199</p>
+                        <p>hi@sarojpaudel.name.np</p>
+                    </address>
+                </div>
+                <button>✉️</button>
+            </div>
+            <div class="mid">
+                <div class="left">
+                    <header>
+                        <h1>Saroj Paudel</h1>
+                        <h3>Frontend Developer</h3>
+                    </header>
+                    <p>I have been doing nothing since first semester. Just landed on Graphilla Technology.</p>
+                    <button>Download CV</button>
+                </div>
+                <div class="right">
+                    <div class="buttons">
+                        <button>F</button>
+                        <button>T</button>
+                        <button>P</button>
+                        <button>L</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section: end -->
+        <hr>
+        <!-- about section: begin -->
+        <section id="about">
+            <div class="container">
+                <div class="about-up">
+                    <div class="left">
+                        <img src="https://placehold.co/400" alt="">
+                    </div>
+                    <div class="right">
+                        <header>
+                            <h1>About Me</h1>
+                            <h3>Nothing Special</h3>
+                        </header>
+                        <p>I am a full stack developer who knows neither frontend nor backend.</p>
+                        <address>
+                            <ul>
+                                <li>
+                                    Saroj Paudel
+                                </li>
+                                <li>
+                                    Bhairahawa
+                                </li>
+                                <li>
+                                    9746937199
+                                </li>
+                                <li>
+                                    saroz@duck.com
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+                <div class="counts"></div>
+            </div>
+        </section>
+        <!-- about section: end -->
+        <hr>
+        <!-- resume section: begin -->
+        <section id="resume">
+            <div class="container">
+                <header>
+                    <h1>My Resume</h1>
+                    <h3>Nothing Special</h3>
+                </header>
+                <div class="main-box">
+                    <div class="box">
+                        <img src="https://placehold.co/40" alt="">
+                        <div class="texts">
+                            <h4>Frontend Developer</h4>
+                            <p>Graphilla Technology</p>
+                            <p>Created this page.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="box">
+                        <img src="https://placehold.co/40" alt="">
+                        <div class="texts">
+                            <h4>Frontend Developer</h4>
+                            <p>Graphilla Technology</p>
+                            <p>Created this page.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="https://placehold.co/40" alt="">
+                        <div class="texts">
+                            <h4>Frontend Developer</h4>
+                            <p>Graphilla Technology</p>
+                            <p>Created this page.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="https://placehold.co/40" alt="">
+                        <div class="texts">
+                            <h4>Frontend Developer</h4>
+                            <p>Graphilla Technology</p>
+                            <p>Created this page.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progresses">
+                    <div class="progress">
+                        <p>Frontend <span>30%</span></p>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                    <div class="progress">
+                        <p>Frontend <span>30%</span></p>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                    <div class="progress">
+                        <p>Frontend <span>30%</span></p>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                </div>
+                <button>Download CV</button>
+            </div>
+        </section>
+        <!-- resume section: end -->
+        <hr>
+        <!-- services section: begin -->
+        <section id="services">
+            <div class="container">
+                <header>
+                    <h1>My Services</h1>
+                    <h3>DO Nothing !</h3>
+                </header>
+                <div class="service-boxes">
+                    <div class="box">
+                        <img src="https://placehold.co/60" alt="icon">
+                        <h4>Web Development</h4>
+                        <ul>
+                            <li>Frontend</li>
+                            <li>Backend</li>
+                            <li>Both</li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <img src="https://placehold.co/60" alt="icon">
+                        <h4>Web Development</h4>
+                        <ul>
+                            <li>Frontend</li>
+                            <li>Backend</li>
+                            <li>Both</li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <img src="https://placehold.co/60" alt="icon">
+                        <h4>Web Development</h4>
+                        <ul>
+                            <li>Frontend</li>
+                            <li>Backend</li>
+                            <li>Both</li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <img src="https://placehold.co/60" alt="icon">
+                        <h4>Web Development</h4>
+                        <ul>
+                            <li>Frontend</li>
+                            <li>Backend</li>
+                            <li>Both</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- services section: end -->
+        <hr>
+        <!-- cta section: begin -->
+        <section id="cta">
+            <div class="container">
+                <h1>Interested in Working with me?</h1>
+                <button>Hire Me</button>
+            </div>
+        </section>
+        <!-- cta section: end -->
+        <hr>
+        <!-- faq section: begin -->
+        <section id="faq">
+            <div class="container">
+                <header>
+                    <h1>FAQS</h1>
+                    <h3>Have any questions?</h3>
+                </header>
+                <details>
+                    <summary>What Services do i Offer?</summary>
+                    <p>Nothing</p>
+                </details>
+                <details>
+                    <summary>How can I pay you?</summary>
+                    <p>you can provide me cash.</p>
+                </details>
+                <details>
+                    <summary>Why to hire you?</summary>
+                    <p>You are not forced to hire me, Hire me if i am more better.</p>
+                </details>
+            </div>
+        </section>
+        <!-- faq section: end -->
+        <hr>
+        <!-- portfolio section: begin -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="upper">
+                    <div class="textual">
+                        <header>
+                            <h1>My Portfolio</h1>
+                            <h3>Useless Works</h3>
+                        </header>
+                    </div>
+                    <menu>
+                        <a href="">Frontend</a>
+                        <a href="">Backend</a>
+                        <a href="">Fullend</a>
+                        <a href="">Weekend</a>
+
+                    </menu>
+                </div>
+                <div class="grid-box">
+                    <div class="box">
+                        <img src="https://placehold.co/300x400" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="https://placehold.co/400x300" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="https://placehold.co/200" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio section: end -->
+        <hr>
+        <!-- testimonial section: begin -->
+        <section id="testimonial">
+            <div class="container">
+                <header>
+                    <h1>Testimonial</h1>
+                    <h3>People what are saying</h3>
+                </header>
+                <div class="reviews">
+                    <div class="review">
+                        <p>&quot;</p>
+                        <p>Such a useless service , Everyone report his profile.</p>
+                        <div class="profile">
+                            <img src="https://placehold.co/30" alt="hero">
+                            <div class="name">
+                                <p><b>Someone</b></p>
+                                <p>Unemployeed, Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <p>&quot;</p>
+                        <p>Such a useless service , Everyone report his profile.</p>
+                        <div class="profile">
+                            <img src="https://placehold.co/30" alt="hero">
+                            <div class="name">
+                                <p><b>Someone</b></p>
+                                <p>Unemployeed, Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- testimonial section: end -->
+        <hr>
+        <!-- blog section: begin -->
+        <section id="blog">
+            <div class="container">
+                <header>
+                    <h1>Blog Posts</h1>
+                    <h3>Read at your own Risk</h3>
+                </header>
+
+                <div class="posts">
+                    <div class="post">
+                        <img src="https://placehold.co/250" alt="poster">
+                        <div class="meta">
+                            <div class="author">
+                                <p>Anonymous</p>
+                                <p>15 Falgun,2082</p>
+                            </div>
+                            <h2>Useless Article Title</h2>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img src="https://placehold.co/250" alt="poster">
+                        <div class="meta">
+                            <div class="author">
+                                <p>Anonymous</p>
+                                <p>15 Falgun,2082</p>
+                            </div>
+                            <h2>Useless Article Title</h2>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img src="https://placehold.co/250" alt="poster">
+                        <div class="meta">
+                            <div class="author">
+                                <p>Anonymous</p>
+                                <p>15 Falgun,2082</p>
+                            </div>
+                            <h2>Useless Article Title</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog section: end -->
+        <hr>
+        <!-- contact section: begin -->
+        <section id="contact">
+            <div class="container">
+                <header>
+                    <h1>Contact</h1>
+                    <h3>Don't get in Touch</h3>
+                </header>
+
+                <div class="left">
+                    <form action="">
+                        <div class="inp-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" placeholder="anything..." id="subject" required>
+                        </div>
+
+                        <div class="inp-group">
+                            <label for="uname">Full Name</label>
+                            <input type="text" placeholder="your name" id="uname" name="uname"
+                                autocapitalize="characters">
+                        </div>
+                        <div class="inp-group">
+                            <label for="mail">Email</label>
+                            <input type="email" name="" id="mail" placeholder="example@mail.com" required>
+                        </div>
+                        <div class="inp-group">
+                            <label for="message">Message</label>
+                            <textarea name="msg" id="message" placeholder="Drop Message..." rows="5" cols="33"
+                                required></textarea>
+                        </div>
+                        <div class="inp-group">
+                            <button type="submit">Send Me</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right">
+                    <address>
+                        <p><span>✉️</span> hi@sarojpaudel.name.np</p>
+                        <p><span>💬</span> 9746937199</p>
+                        <p><span>📍</span> Bhairahawa, Rupandehi</p>
+
+                    </address>
+                    <div class="map">
+                        <img src="https://placehold.co/350x180" alt="mappp">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section: end -->
+
+    </main>
+    <!-- main end -->
+    <hr>
+    <!-- footer start  -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <p>All Rights Reserved by Graphilla Technology, 2026</p>
+            </div>
+            <div>
+                <p>FAQs / Privacy Policy / Services</p>
+            </div>
+            <div class="icons">
+                <span>facebook</span>
+                <span>twitter</span>
+                <span>linkedin</span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>
