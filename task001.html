@@ -135,22 +135,23 @@
             z-index: -2;
         }
 
-        .hero-header{
+        .hero-header {
             display: flex;
             justify-content: space-between;
         }
 
-        .hero-header-contact{
+        .hero-header-contact {
             margin-top: 30px;
             font-style: normal;
             color: gray;
             font-weight: 500;
             font-size: 18px;
         }
-                .hero-header-contact span{
-                    margin-left: 40px;
-                }
-        
+
+        .hero-header-contact span {
+            margin-left: 40px;
+        }
+
         .hero-header-button {
             background-color: orange;
             color: black;
@@ -158,7 +159,7 @@
             border: none;
             font-size: 20px;
             cursor: pointer;
-        } 
+        }
 
         .hero-container {
             width: 80%;
@@ -179,8 +180,15 @@
         }
 
         .hero-intro .name {
+
+            color: white;
+        }
+
+        h1 {
             font-size: 40px;
             font-weight: 600;
+            color: rgba(0, 0, 0, 0.15);
+
         }
 
         .hero-intro .position {
@@ -188,8 +196,8 @@
             margin: 20px 0;
         }
 
-        
-        .hero-cta-button{
+
+        .hero-cta-button {
             background-color: orange;
             padding: 12px 25px;
             border-radius: 5px;
@@ -198,21 +206,21 @@
             margin-top: 35px;
             transition: .5s ease-in-out;
             cursor: pointer;
-            
+
         }
-        
+
         .hero-cta-button:hover {
             padding: 12px 35px;
             color: white;
             box-shadow: 0 20px 15px 2px rgba(8, 8, 151, 0.231);
         }
-        
+
         .hero-social-buttons {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .hero-social-buttons button {
             padding: 10px;
             border: 1px solid rgba(255, 255, 255, 0.767);
@@ -224,18 +232,19 @@
             transition: .2s ease-in-out;
             cursor: pointer;
         }
-        
+
         .hero-social-buttons button:hover {
             border-radius: 50%;
             border: 1px solid rgba(255, 166, 0, 0.756);
             color: rgba(255, 166, 0, 0.763);
         }
-        
-        
-        
+
+
+
         .orange {
             color: orange;
         }
+
         /* hero section: end  */
 
 
@@ -244,13 +253,113 @@
 
 
 
+        .about-container {
+            padding: 90px;
+        }
 
+        .about-info {
+            display: flex;
+            margin: 10px;
+            gap: 40px;
+        }
 
+        /* .about-title {
+            color: rgba(0, 0, 0, 0.15);
+        } */
 
+        .about-position,
+        h3 {
+            font-weight: 400;
+            font-size: 30px;
+        }
 
+        .about-text header {
+            margin-bottom: 30px;
+        }
 
+        .about-desc {
+            line-height: 1.8;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .about-details {
+            margin: 75px 0;
+        }
+
+        .about-details-list {
+            display: grid;
+            list-style-type: none;
+            font-style: normal;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.7);
+            grid-template-columns: 1fr 1fr;
+            row-gap: 15px;
+        }
+
+        .about-details-list i {
+            margin-right: 10px;
+            color: orange;
+        }
+
+        .about-stats {
+            display: flex;
+            box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px 30px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-stats-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .about-stats-box .stats-icon {
+            color: orange;
+            font-size: 30px;
+        }
+
+        .stats-text .number {
+            font-size: 22px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .stats-text .desc {
+            color: rgba(0, 0, 0, 0.7);
+            font-weight: 500;
+        }
+
+        .about-image {
+            animation: levitate-img 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes levitate-img {
+            from {
+                transform: translateY(-5px);
+            }
+
+            to {
+                transform: translateY(5px);
+            }
+        }
 
         /* about section: end  */
+
+
+        /* resume section: start  */
+
+        .resume-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-direction: column;
+        }
+
+        /* resume section: end  */
     </style>
 
 </head>
@@ -319,51 +428,90 @@
                 </div>
             </section>
             <!-- hero section: end -->
-            <hr>
+
             <!-- about section: begin -->
             <section id="about">
-                <div class="container">
-                    <div class="about-up">
-                        <div class="left">
-                            <img src="https://placehold.co/400" alt="">
+                <div class="about-container">
+                    <div class="about-info">
+                        <div class="about-image">
+                            <img src="https://rxdtheme.com/html/themetum/wokoya/new-sidebar/img/about-me.png" alt="">
                         </div>
-                        <div class="right">
+                        <div class="about-text">
                             <header>
-                                <h1>About Me</h1>
-                                <h3>Nothing Special</h3>
+                                <h1 class="about-title">About Me</h1>
+                                <h3 class="about-position">Web Developer</h3>
                             </header>
-                            <p>I am a full stack developer who knows neither frontend nor backend.</p>
-                            <address>
-                                <ul>
+                            <p class="about-desc">I am a full stack developer who knows neither frontend nor backend.I
+                                am dedicated his life to learning what makes humans tick. He studies, researches and
+                                reads everything hecan, and shares his findings with his clients. His philosophy is to
+                                learn, test, analyse, improve and re-test. His motto is stay agile.
+
+                                <br>
+                                I'm a Freelancer Front-end Developer with over 3 years of experience.
+                            </p>
+                            <address class="about-details">
+                                <ul class="about-details-list">
                                     <li>
-                                        Saroj Paudel
+                                        <i class="fa-solid fa-user"></i>Saroj Paudel
                                     </li>
                                     <li>
-                                        Bhairahawa
+                                        <i class="fa-solid fa-location-dot"></i>Bhairahawa
                                     </li>
                                     <li>
-                                        9746937199
+                                        <i class="fa-brands fa-whatsapp"></i>9746937199
                                     </li>
                                     <li>
-                                        saroz@duck.com
+                                        <i class="fa-solid fa-envelope"></i>saroz@duck.com
                                     </li>
                                 </ul>
                             </address>
                         </div>
                     </div>
-                    <div class="counts"></div>
+                    <div class="about-stats">
+                        <div class="about-stats-box">
+                            <i class="stats-icon fa-regular fa-calendar"></i>
+                            <div class="stats-text">
+                                <div class="number">0000</div>
+                                <div class="desc">Working Hours</div>
+                            </div>
+                        </div>
+
+                        <div class="about-stats-box">
+                            <i class="stats-icon fa-regular fa-circle-dot"></i>
+                            <div class="stats-text">
+                                <div class="number">0000</div>
+                                <div class="desc">Total Projects</div>
+                            </div>
+                        </div>
+
+                        <div class="about-stats-box">
+                            <i class="stats-icon fa-regular fa-lightbulb"></i>
+                            <div class="stats-text">
+                                <div class="number">0000</div>
+                                <div class="desc">Years Journey</div>
+                            </div>
+                        </div>
+
+                        <div class="about-stats-box">
+                            <i class="stats-icon fa-regular fa-face-grin"></i>
+                            <div class="stats-text">
+                                <div class="number">0000</div>
+                                <div class="desc">Total Client</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- about section: end -->
             <hr>
             <!-- resume section: begin -->
             <section id="resume">
-                <div class="container">
+                <div class="resume-container">
                     <header>
                         <h1>My Resume</h1>
                         <h3>Nothing Special</h3>
                     </header>
-                    <div class="main-box">
+                    <div class="resume-experience">
                         <div class="box">
                             <img src="https://placehold.co/40" alt="">
                             <div class="texts">
