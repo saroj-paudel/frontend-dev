@@ -212,7 +212,7 @@
         .hero-cta-button:hover {
             padding: 12px 35px;
             color: white;
-            box-shadow: 0 20px 15px 2px rgba(8, 8, 151, 0.231);
+            box-shadow: 0 15px 10px 0px rgba(8, 8, 151, 0.1);
         }
 
         .hero-social-buttons {
@@ -351,15 +351,283 @@
 
         /* resume section: start  */
 
+        #resume {
+            background-color: rgba(175, 165, 239, 0.1);
+        }
+
         .resume-container {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 50px;
             flex-direction: column;
+            padding: 50px;
+            /* margin: 30px; */
+        }
+
+        .resume-container header {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .resume-experience {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 100px;
+        }
+
+        .experience-box {
+            background-color: white;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.02);
+            display: flex;
+            gap: 30px;
+            line-height: 2;
+            max-width: 460px;
+        }
+
+        .experience-box .icon {
+            color: orange;
+            font-size: 40px;
+        }
+
+        .experience-title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .experience-place {
+            color: rgba(0, 0, 0, 0.7);
+            font-weight: 500;
+        }
+
+        .experience-outcome {
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+
+        .resume-progress {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px 100px;
+        }
+
+        .resume-progress-box {
+            width: 500px;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .resume-progress-bar {
+            appearance: none;
+            width: 100%;
+            height: 6px;
+        }
+
+        .resume-progress-bar::-webkit-progress-bar {
+            border-radius: 10px;
+            background-color: rgb(239, 237, 237);
+        }
+
+        .resume-progress-bar::-webkit-progress-value {
+            background-color: orange;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .resume-progress-text {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+
+
+
+
+        .resume-button {
+            background-color: orange;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 18px;
+            border: none;
+            margin-top: 35px;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+
+        }
+
+        .resume-button:hover {
+            padding: 12px 35px;
+            color: white;
+            box-shadow: 0 15px 10px 0px rgba(8, 8, 151, 0.1);
         }
 
         /* resume section: end  */
+
+        /* service section: start  */
+
+        .service-container {
+            padding: 90px 60px;
+        }
+
+        .service-container header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service-boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px 15px;
+            padding: 30px;
+        }
+
+
+        .service-box {
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.068);
+            border-radius: 15px;
+            width: 380px;
+            height: 350px;
+            padding: 50px 40px;
+            position: relative;
+            overflow: hidden;
+
+
+        }
+
+        .service-box::before {
+            content: '';
+            position: absolute;
+            background-color: rgb(255, 179, 0);
+            height: 100%;
+            width: 0;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            transition: .4s ease-in-out;
+        }
+
+        .service-box:hover::before {
+            width: 100%;
+        }
+
+        .service-box .service-list {
+            list-style-type: none;
+            color: rgba(0, 0, 0, 0.79);
+            line-height: 2;
+        }
+
+        .service-box .service-list li::before {
+            content: '>';
+            margin-right: 10px;
+        }
+
+        .service-box .icon {
+            font-size: 30px;
+            height: 70px;
+            width: 70px;
+            position: relative;
+            border-radius: 100%;
+
+            background-color: rgb(237, 237, 237);
+        }
+
+        .service-box .icon i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0, .8);
+
+        }
+
+        .service-box .service-title {
+            font-size: 25px;
+            font-weight: 500;
+            color: rgba(25, 2, 60, 0.653);
+            margin: 20px 0;
+            z-index: 66;
+        }
+
+        /* service section: end  */
+
+
+        /* cta section: start  */
+        .cta-container {
+            background: #140909;
+            background: linear-gradient(169deg, rgba(20, 9, 9, 1) 0%, rgba(6, 21, 66, 0.82) 100%);
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        .cta-title {
+            color: white;
+            font-weight: 700;
+        }
+
+        .cta-button {
+            padding: 10px 25px;
+            color: orange;
+            border: 1px solid orange;
+            border-radius: 5px;
+            background-color: transparent;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            scale: 1.08;
+        }
+
+        /* cta section: end  */
+
+        /* faq section: start  */
+
+        .faq-container {
+            padding: 90px 60px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .faq-container header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .faq-group {
+            width: 70%;
+            margin: auto;
+        }
+
+        .faq-item {
+            background-color: rgb(239, 239, 239);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.048);
+            margin-bottom: 30px;
+        }
+
+        .faq-question {
+            font-weight: 500;
+        }
+
+        .faq-answer {
+            text-indent: 20px;
+            color: rgb(101, 100, 100);
+            margin-top: 15px;
+        }
+
+        /* faq section: end  */
     </style>
 
 </head>
@@ -503,113 +771,179 @@
                 </div>
             </section>
             <!-- about section: end -->
-            <hr>
+
             <!-- resume section: begin -->
             <section id="resume">
                 <div class="resume-container">
                     <header>
                         <h1>My Resume</h1>
-                        <h3>Nothing Special</h3>
+                        <h3>Education & Experience</h3>
                     </header>
                     <div class="resume-experience">
-                        <div class="box">
-                            <img src="https://placehold.co/40" alt="">
-                            <div class="texts">
-                                <h4>Frontend Developer</h4>
-                                <p>Graphilla Technology</p>
-                                <p>Created this page.</p>
+                        <div class="experience-box">
+                            <i class="fa-brands fa-css3-alt icon"></i>
+                            <div class="experience-texts">
+                                <h4 class="experience-title">Frontend Developer</h4>
+                                <p class="experience-place">Graphilla Technology (2026- 2027)</p>
+                                <p class="experience-outcome">Created this page. Learned HTML, CSS and Something....</p>
                             </div>
                         </div>
 
 
-                        <div class="box">
-                            <img src="https://placehold.co/40" alt="">
-                            <div class="texts">
-                                <h4>Frontend Developer</h4>
-                                <p>Graphilla Technology</p>
-                                <p>Created this page.</p>
+                        <div class="experience-box">
+                            <i class="fa-solid fa-graduation-cap icon"></i>
+                            <div class="experience-texts">
+                                <h4 class="experience-title">Computer Science</h4>
+                                <p class="experience-place">Tribhuvan University (2024 - 2028)</p>
+                                <p class="experience-outcome">Gained Something that is equivalent to nothing !</p>
                             </div>
                         </div>
 
-                        <div class="box">
-                            <img src="https://placehold.co/40" alt="">
-                            <div class="texts">
-                                <h4>Frontend Developer</h4>
-                                <p>Graphilla Technology</p>
-                                <p>Created this page.</p>
+                        <div class="experience-box">
+                            <i class="fa-brands fa-node icon"></i>
+                            <div class="experience-texts">
+                                <h4 class="experience-title">Backend Developer</h4>
+                                <p class="experience-place">Graphilla Technology (2026- 2027)</p>
+                                <p class="experience-outcome">Copied this page. Understood programmers are laziest
+                                    person.</p>
                             </div>
                         </div>
 
-                        <div class="box">
-                            <img src="https://placehold.co/40" alt="">
-                            <div class="texts">
-                                <h4>Frontend Developer</h4>
-                                <p>Graphilla Technology</p>
-                                <p>Created this page.</p>
+
+                        <div class="experience-box">
+                            <i class="fa-solid fa-file-lines icon"></i>
+                            <div class="experience-texts">
+                                <h4 class="experience-title">Computer Engineering</h4>
+                                <p class="experience-place">NEB (2020 - 2024)</p>
+                                <p class="experience-outcome">Gained Everything but forget !</p>
                             </div>
                         </div>
+
                     </div>
-                    <div class="progresses">
-                        <div class="progress">
-                            <p>Frontend <span>30%</span></p>
-                            <progress value="30" max="100"></progress>
+                    <div class="resume-progress">
+
+                        <div class="resume-progress-box">
+                            <div class="resume-progress-text">
+                                <div class="progress-name">Frontend Development
+                                </div>
+                                <div class="progress-value">30%</div>
+                            </div>
+                            <progress class="resume-progress-bar" value="30" max="100"></progress>
                         </div>
-                        <div class="progress">
-                            <p>Frontend <span>30%</span></p>
-                            <progress value="30" max="100"></progress>
+
+                        <div class="resume-progress-box">
+                            <div class="resume-progress-text">
+                                <div class="progress-name">Python Programming
+                                </div>
+                                <div class="progress-value">60%</div>
+                            </div>
+                            <progress class="resume-progress-bar" value="60" max="100"></progress>
                         </div>
-                        <div class="progress">
-                            <p>Frontend <span>30%</span></p>
-                            <progress value="30" max="100"></progress>
+
+                        <div class="resume-progress-box">
+                            <div class="resume-progress-text">
+                                <div class="progress-name">Communication
+                                </div>
+                                <div class="progress-value">-10%</div>
+                            </div>
+                            <progress class="resume-progress-bar" value="0" max="100"></progress>
                         </div>
+
+                        <div class="resume-progress-box">
+                            <div class="resume-progress-text">
+                                <div class="progress-name">Collaboration
+                                </div>
+                                <div class="progress-value">20%</div>
+                            </div>
+                            <progress class="resume-progress-bar" value="20" max="100"></progress>
+                        </div>
+
                     </div>
-                    <button>Download CV</button>
+                    <button class="resume-button">Download CV</button>
                 </div>
             </section>
             <!-- resume section: end -->
-            <hr>
             <!-- services section: begin -->
             <section id="services">
-                <div class="container">
+                <div class="service-container">
                     <header>
                         <h1>My Services</h1>
-                        <h3>DO Nothing !</h3>
+                        <h3>Look What I Don't Offer</h3>
                     </header>
                     <div class="service-boxes">
-                        <div class="box">
-                            <img src="https://placehold.co/60" alt="icon">
-                            <h4>Web Development</h4>
-                            <ul>
+                        <div class="service-box">
+                            <div class="icon">
+
+                                <i class="fa-solid fa-bezier-curve "></i>
+                            </div>
+                            <h4 class="service-title">Web Development</h4>
+                            <ul class="service-list">
                                 <li>Frontend</li>
                                 <li>Backend</li>
                                 <li>Both</li>
                             </ul>
                         </div>
 
-                        <div class="box">
-                            <img src="https://placehold.co/60" alt="icon">
-                            <h4>Web Development</h4>
-                            <ul>
+                        <div class="service-box">
+                            <div class="icon">
+
+                                <i class="fa-solid fa-bezier-curve "></i>
+                            </div>
+                            <h4 class="service-title">Web Development</h4>
+                            <ul class="service-list">
                                 <li>Frontend</li>
                                 <li>Backend</li>
                                 <li>Both</li>
                             </ul>
                         </div>
 
-                        <div class="box">
-                            <img src="https://placehold.co/60" alt="icon">
-                            <h4>Web Development</h4>
-                            <ul>
+
+                        <div class="service-box">
+                            <div class="icon">
+
+                                <i class="fa-solid fa-bezier-curve "></i>
+                            </div>
+                            <h4 class="service-title">Web Development</h4>
+                            <ul class="service-list">
                                 <li>Frontend</li>
                                 <li>Backend</li>
                                 <li>Both</li>
                             </ul>
                         </div>
 
-                        <div class="box">
-                            <img src="https://placehold.co/60" alt="icon">
-                            <h4>Web Development</h4>
-                            <ul>
+                        <div class="service-box">
+                            <div class="icon">
+
+                                <i class="fa-solid fa-bezier-curve "></i>
+                            </div>
+                            <h4 class="service-title">Web Development</h4>
+                            <ul class="service-list">
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                                <li>Both</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="icon">
+
+                                <i class="fa-solid fa-bezier-curve "></i>
+                            </div>
+                            <h4 class="service-title">Web Development</h4>
+                            <ul class="service-list">
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                                <li>Both</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="icon">
+
+                                <i class="fa-solid fa-bezier-curve "></i>
+                            </div>
+                            <h4 class="service-title">Web Development</h4>
+                            <ul class="service-list">
                                 <li>Frontend</li>
                                 <li>Backend</li>
                                 <li>Both</li>
@@ -620,35 +954,38 @@
                 </div>
             </section>
             <!-- services section: end -->
-            <hr>
+
             <!-- cta section: begin -->
             <section id="cta">
-                <div class="container">
-                    <h1>Interested in Working with me?</h1>
-                    <button>Hire Me</button>
+                <div class="cta-container">
+                    <h1 class="cta-title">Interested in Working with me?</h1>
+                    <button class="cta-button">Hire Me</button>
                 </div>
             </section>
             <!-- cta section: end -->
             <hr>
             <!-- faq section: begin -->
             <section id="faq">
-                <div class="container">
+                <div class="faq-container">
                     <header>
                         <h1>FAQS</h1>
                         <h3>Have any questions?</h3>
                     </header>
-                    <details>
-                        <summary>What Services do i Offer?</summary>
-                        <p>Nothing</p>
-                    </details>
-                    <details>
-                        <summary>How can I pay you?</summary>
-                        <p>you can provide me cash.</p>
-                    </details>
-                    <details>
-                        <summary>Why to hire you?</summary>
-                        <p>You are not forced to hire me, Hire me if i am more better.</p>
-                    </details>
+                    <div class="faq-group">
+
+                        <details class="faq-item">
+                            <summary class="faq-question">What Services do i Offer?</summary>
+                            <p class="faq-answer">Nothing</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-question">How can I pay you?</summary>
+                            <p class="faq-answer">you can provide me cash.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-question">Why to hire you?</summary>
+                            <p class="faq-answer">You are not forced to hire me, Hire me if i am more better.</p>
+                        </details>
+                    </div>
                 </div>
             </section>
             <!-- faq section: end -->
