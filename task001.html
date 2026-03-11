@@ -351,7 +351,9 @@
 
         /* resume section: start  */
 
-        #resume {
+        #resume,
+        #portfolio,
+        #blog {
             background-color: rgba(175, 165, 239, 0.1);
         }
 
@@ -628,6 +630,323 @@
         }
 
         /* faq section: end  */
+
+        /* portfolio section: start  */
+
+        .portfolio-container {
+            padding: 90px 80px;
+        }
+
+        .portfolio-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .portfolio-menu {
+            border-bottom: 2px solid rgb(201, 201, 201);
+            margin-right: 50px;
+            padding: 8px 0;
+        }
+
+        .portfolio-menu a {
+            text-decoration: none;
+            color: #140909;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        .portfolio-menu a:hover {
+            color: orange;
+        }
+
+        .portfolio-menu a.active {
+            color: orange;
+            position: relative;
+        }
+
+        .portfolio-menu a.active::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: orange;
+        }
+
+
+        .portfolio-gallery {
+            margin: 40px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 10px;
+            gap: 30px;
+        }
+
+        .portfolio-gallery-box {
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0;
+            object-fit: contain;
+            position: relative;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+
+        }
+
+        .portfolio-gallery-box:hover img {
+            scale: 1.2;
+        }
+
+        .portfolio-gallery-box:hover .card-details {
+            opacity: 1;
+            visibility: visible;
+
+        }
+
+        .portfolio-gallery-box img {
+            height: 100%;
+            width: 100%;
+            transition: .3s ease-in-out;
+        }
+
+
+        .card-details {
+            display: flex;
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            flex-direction: column;
+            color: orange;
+            padding-left: 20px;
+
+            transition: .3s ease-in-out;
+        }
+
+
+        .card-project-title {
+            font-weight: 600;
+        }
+
+        .portfolio-gallery-box:nth-child(1) {
+            grid-row: 1 / span 5;
+        }
+
+        .portfolio-gallery-box:nth-child(2) {
+            grid-row: 1 / span 11;
+        }
+
+        .portfolio-gallery-box:nth-child(3) {
+            grid-row: 1 / span 6;
+        }
+
+        .portfolio-gallery-box:nth-child(4) {
+            grid-row: 6 / span 9;
+        }
+
+        .portfolio-gallery-box:nth-child(5) {
+            grid-row: 12 / span 3;
+        }
+
+        .portfolio-gallery-box:nth-child(6) {
+            grid-row: 7 / span 8;
+        }
+
+
+
+
+
+        /* portfolio section: end  */
+
+        /* testimonial secction: start  */
+        .testimonial-container {
+            padding: 90px 60px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .testimonial-container header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .user-reviews {
+            /* overflow-x: scroll; */
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            justify-content: space-evenly;
+        }
+
+        .user-review-box {
+            max-width: 600px;
+            min-width: 500px;
+            padding: 50px;
+            box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.057);
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            /* line-height: 2; */
+        }
+
+        .review-text {
+            color: rgb(99, 99, 99);
+        }
+
+        .user-profile {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .user-name {
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .user-photo {
+            border-radius: 100%;
+            border: 1px solid rgb(255, 255, 255);
+            outline: 1px solid black;
+            height: 50px;
+            width: 50px;
+            overflow: hidden;
+        }
+
+        .user-photo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .user-review-box .icon {
+            font-size: 50px;
+            text-align: center;
+            color: orange;
+        }
+
+        /* testimonial section: end  */
+
+
+        /* blog section: start  */
+
+
+        .blog-container {
+            padding: 90px 60px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .blog-container header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+
+        .blog-posts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+        }
+
+        .blog-post-box {
+
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.082);
+        }
+
+        .post-details {
+            padding: 30px 20px;
+        }
+
+        .blog-post-meta {
+            color: gray;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .blog-post-title {
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        /* blog section: end  */
+
+        /* contact section: start */
+
+        #contact {
+            background-color: rgb(255, 183, 49);
+        }
+
+        .contact-container {
+            padding: 90px 60px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .contact-container header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-box {
+            padding: 20px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .contact-form {
+            width: 60%;
+        }
+
+        .contact-form .input-group {
+
+            margin-bottom: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .contact-form input,
+        textarea {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            padding: 10px;
+            outline: none;
+        }
+
+
+        .contact-details address {
+            font-size: 20px;
+            font-style: normal;
+        }
+
+        .contact-details address p {
+            margin-bottom: 20px;
+        }
+
+        .contact-details address p i {
+            margin-right: 10px;
+        }
+
+        /* contact section: end  */
     </style>
 
 </head>
@@ -989,168 +1308,223 @@
                 </div>
             </section>
             <!-- faq section: end -->
-            <hr>
+
             <!-- portfolio section: begin -->
             <section id="portfolio">
-                <div class="container">
-                    <div class="upper">
-                        <div class="textual">
-                            <header>
-                                <h1>My Portfolio</h1>
-                                <h3>Useless Works</h3>
-                            </header>
-                        </div>
-                        <menu>
-                            <a href="">Frontend</a>
+                <div class="portfolio-container">
+                    <div class="portfolio-top">
+                        <header>
+                            <h1>My Portfolio</h1>
+                            <h3>Useless Works</h3>
+                        </header>
+                        <menu class="portfolio-menu">
+                            <a href="" class="active">Frontend</a>
                             <a href="">Backend</a>
                             <a href="">Fullend</a>
                             <a href="">Weekend</a>
-
                         </menu>
                     </div>
-                    <div class="grid-box">
-                        <div class="box">
-                            <img src="https://placehold.co/300x400" alt="">
+                    <div class="portfolio-gallery">
+                        <div class="portfolio-gallery-box">
+                            <img src="https://picsum.photos/360/250" alt="">
+                            <div class="card-details">
+                                <div class="card-project-category">Category</div>
+                                <div class="card-project-title">Project Title</div>
+                            </div>
                         </div>
-                        <div class="box">
-                            <img src="https://placehold.co/400x300" alt="">
+                        <div class="portfolio-gallery-box">
+                            <img src="https://picsum.photos/360/550" alt="">
+                            <div class="card-details">
+                                <div class="card-project-category">Category</div>
+                                <div class="card-project-title">Project Title</div>
+                            </div>
                         </div>
-                        <div class="box">
-                            <img src="https://placehold.co/200" alt="">
+                        <div class="portfolio-gallery-box">
+                            <img src="https://picsum.photos/360/300" alt="">
+                            <div class="card-details">
+                                <div class="card-project-category">Category</div>
+                                <div class="card-project-title">Project Title</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-gallery-box">
+                            <img src="https://picsum.photos/360/450" alt="">
+                            <div class="card-details">
+                                <div class="card-project-category">Category</div>
+                                <div class="card-project-title">Project Title</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-gallery-box">
+                            <img src="https://picsum.photos/360/150" alt="">
+                            <div class="card-details">
+                                <div class="card-project-category">Category</div>
+                                <div class="card-project-title">Project Title</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-gallery-box">
+                            <img src="https://picsum.photos/360/400" alt="">
+                            <div class="card-details">
+                                <div class="card-project-category">Category</div>
+                                <div class="card-project-title">Project Title</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- portfolio section: end -->
-            <hr>
             <!-- testimonial section: begin -->
             <section id="testimonial">
-                <div class="container">
+                <div class="testimonial-container">
                     <header>
                         <h1>Testimonial</h1>
-                        <h3>People what are saying</h3>
+                        <h3>People What Are Saying</h3>
                     </header>
-                    <div class="reviews">
-                        <div class="review">
-                            <p>&quot;</p>
-                            <p>Such a useless service , Everyone report his profile.</p>
-                            <div class="profile">
-                                <img src="https://placehold.co/30" alt="hero">
-                                <div class="name">
-                                    <p><b>Someone</b></p>
-                                    <p>Unemployeed, Nepal</p>
+                    <div class="user-reviews">
+                        <div class="user-review-box">
+                            <div class="icon">
+
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p class="review-text">Such a useless service , Everyone report his profile. kaam xaina
+                                block report dasljhsb kjsblkjsfb kjsbdkjs kjbsdkj sdkjdskj d</p>
+                            <div class="user-profile">
+                                <div class="user-photo">
+                                    <img src="https://picsum.photos/50" alt="hero">
+
+                                </div>
+                                <div class="user-details">
+                                    <p class="user-name">Nabin Poudel</p>
+                                    <p class="user-position">Self-employeed, Nepal.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-review-box">
+                            <div class="icon">
+
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p class="review-text">Such a useless service , Everyone report his profile. kaam xaina
+                                block report dasljhsb kjsblkjsfb kjsbdkjs kjbsdkj sdkjdskj d</p>
+                            <div class="user-profile">
+                                <div class="user-photo">
+                                    <img src="https://picsum.photos/50" alt="hero">
+
+                                </div>
+                                <div class="user-details">
+                                    <p class="user-name">Nabin Poudel</p>
+                                    <p class="user-position">Self-employeed, Nepal.
+
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="review">
-                            <p>&quot;</p>
-                            <p>Such a useless service , Everyone report his profile.</p>
-                            <div class="profile">
-                                <img src="https://placehold.co/30" alt="hero">
-                                <div class="name">
-                                    <p><b>Someone</b></p>
-                                    <p>Unemployeed, Nepal</p>
-                                </div>
-                            </div>
-                        </div>
+
+
 
                     </div>
                 </div>
             </section>
             <!-- testimonial section: end -->
-            <hr>
+
             <!-- blog section: begin -->
             <section id="blog">
-                <div class="container">
+                <div class="blog-container">
                     <header>
                         <h1>Blog Posts</h1>
                         <h3>Read at your own Risk</h3>
                     </header>
 
-                    <div class="posts">
-                        <div class="post">
-                            <img src="https://placehold.co/250" alt="poster">
-                            <div class="meta">
-                                <div class="author">
-                                    <p>Anonymous</p>
-                                    <p>15 Falgun,2082</p>
+                    <div class="blog-posts">
+                        <div class="blog-post-box">
+                            <img src="https://picsum.photos/350/300" alt="poster">
+                            <div class="post-details">
+                                <div class="blog-post-meta">
+                                    <p class="blog-author"><i class="fa-solid fa-user"></i>Anonymous</p>
+                                    <p class="blog-date"><i class="fa-regular fa-clock"></i>15 Falgun,2082</p>
                                 </div>
-                                <h2>Useless Article Title</h2>
+                                <h2 class="blog-post-title">Useless Article Title</h2>
                             </div>
                         </div>
 
-                        <div class="post">
-                            <img src="https://placehold.co/250" alt="poster">
-                            <div class="meta">
-                                <div class="author">
-                                    <p>Anonymous</p>
-                                    <p>15 Falgun,2082</p>
+
+                        <div class="blog-post-box">
+                            <img src="https://picsum.photos/350/300" alt="poster">
+                            <div class="post-details">
+                                <div class="blog-post-meta">
+                                    <p class="blog-author"><i class="fa-solid fa-user"></i>Anonymous</p>
+                                    <p class="blog-date"><i class="fa-regular fa-clock"></i>15 Falgun,2082</p>
                                 </div>
-                                <h2>Useless Article Title</h2>
+                                <h2 class="blog-post-title">Useless Article Title</h2>
                             </div>
                         </div>
 
-                        <div class="post">
-                            <img src="https://placehold.co/250" alt="poster">
-                            <div class="meta">
-                                <div class="author">
-                                    <p>Anonymous</p>
-                                    <p>15 Falgun,2082</p>
+
+                        <div class="blog-post-box">
+                            <img src="https://picsum.photos/350/300" alt="poster">
+                            <div class="post-details">
+                                <div class="blog-post-meta">
+                                    <p class="blog-author"><i class="fa-solid fa-user"></i>Anonymous</p>
+                                    <p class="blog-date"><i class="fa-regular fa-clock"></i>15 Falgun,2082</p>
                                 </div>
-                                <h2>Useless Article Title</h2>
+                                <h2 class="blog-post-title">Useless Article Title</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- blog section: end -->
-            <hr>
+
             <!-- contact section: begin -->
             <section id="contact">
-                <div class="container">
+                <div class="contact-container">
                     <header>
                         <h1>Contact</h1>
                         <h3>Don't get in Touch</h3>
                     </header>
 
-                    <div class="left">
-                        <form action="">
-                            <div class="inp-group">
-                                <label for="subject">Subject</label>
+                    <div class="contact-box">
+
+
+                        <form action="" class="contact-form">
+                            <div class="input-group">
                                 <input type="text" placeholder="anything..." id="subject" required>
                             </div>
 
-                            <div class="inp-group">
-                                <label for="uname">Full Name</label>
+                            <div class="input-group">
                                 <input type="text" placeholder="your name" id="uname" name="uname"
                                     autocapitalize="characters">
                             </div>
-                            <div class="inp-group">
-                                <label for="mail">Email</label>
+                            <div class="input-group">
                                 <input type="email" name="" id="mail" placeholder="example@mail.com" required>
                             </div>
-                            <div class="inp-group">
-                                <label for="message">Message</label>
+                            <div class="input-group">
                                 <textarea name="msg" id="message" placeholder="Drop Message..." rows="5" cols="33"
                                     required></textarea>
                             </div>
-                            <div class="inp-group">
-                                <button type="submit">Send Me</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="right">
-                        <address>
-                            <p><span>✉️</span> hi@sarojpaudel.name.np</p>
-                            <p><span>💬</span> 9746937199</p>
-                            <p><span>📍</span> Bhairahawa, Rupandehi</p>
 
-                        </address>
-                        <div class="map">
-                            <img src="https://placehold.co/350x180" alt="mappp">
+                            <button type="submit">Send Me</button>
+
+                        </form>
+
+                        <div class="contact-details">
+                            <address>
+                                <p><i class="fa-solid fa-envelope"></i> hi@sarojpaudel.name.np</p>
+                                <p><i class="fa-brands fa-whatsapp"></i> 9746937199</p>
+                                <p><i class="fa-solid fa-location-dot"></i> Bhairahawa, Rupandehi</p>
+
+                            </address>
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.320247249892!2d83.44970487553356!3d27.506262776298552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39969b13f755b965%3A0x318a207b3da32d40!2sGraphilla%20Technology%20Private%20Limited!5e1!3m2!1sen!2snp!4v1773219843541!5m2!1sen!2snp"
+                                    width="350" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
+
                     </div>
+
                 </div>
             </section>
             <!-- contact section: end -->
