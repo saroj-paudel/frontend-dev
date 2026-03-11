@@ -57,6 +57,7 @@
         .sidebar-image img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
 
         .sidebar-menu {
@@ -582,12 +583,13 @@
             background-color: transparent;
             font-size: 18px;
             font-weight: 500;
+
             cursor: pointer;
             transition: .3s ease-in-out;
         }
 
         .cta-button:hover {
-            scale: 1.08;
+            padding: 12px 30px;
         }
 
         /* cta section: end  */
@@ -862,7 +864,7 @@
         }
 
         .blog-post-box {
-
+cursor: pointer;
             border-radius: 10px;
             overflow: hidden;
             background-color: white;
@@ -946,6 +948,17 @@
             margin-right: 10px;
         }
 
+        .contact-form button{
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: 400;
+            cursor: pointer;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(5, 12, 75);
+        }
+
         /* contact section: end  */
     </style>
 
@@ -999,7 +1012,7 @@
                     <div class="hero-intro">
                         <header>
                             <h1 class="name">Saroj <span class="orange">Paudel</span></h1>
-                            <h3 class="position">Frontend Developer</h3>
+                            <h2 class="position">Frontend Developer</h2>
                         </header>
                         <p class="hero-intro-desc">I have been doing nothing since first semester. Just landed on
                             Graphilla Technology.</p>
@@ -1021,12 +1034,12 @@
                 <div class="about-container">
                     <div class="about-info">
                         <div class="about-image">
-                            <img src="https://rxdtheme.com/html/themetum/wokoya/new-sidebar/img/about-me.png" alt="">
+                            <img src="https://picsum.photos/460/475" alt="">
                         </div>
                         <div class="about-text">
                             <header>
                                 <h1 class="about-title">About Me</h1>
-                                <h3 class="about-position">Web Developer</h3>
+                                <h2 class="about-position">Web Developer</h2>
                             </header>
                             <p class="about-desc">I am a full stack developer who knows neither frontend nor backend.I
                                 am dedicated his life to learning what makes humans tick. He studies, researches and
@@ -1096,7 +1109,7 @@
                 <div class="resume-container">
                     <header>
                         <h1>My Resume</h1>
-                        <h3>Education & Experience</h3>
+                        <h2>Education & Experience</h2>
                     </header>
                     <div class="resume-experience">
                         <div class="experience-box">
@@ -1187,7 +1200,7 @@
                 <div class="service-container">
                     <header>
                         <h1>My Services</h1>
-                        <h3>Look What I Don't Offer</h3>
+                        <h2>Look What I Don't Offer</h2>
                     </header>
                     <div class="service-boxes">
                         <div class="service-box">
@@ -1288,7 +1301,7 @@
                 <div class="faq-container">
                     <header>
                         <h1>FAQS</h1>
-                        <h3>Have any questions?</h3>
+                        <h2>Have any questions?</h2>
                     </header>
                     <div class="faq-group">
 
@@ -1315,7 +1328,7 @@
                     <div class="portfolio-top">
                         <header>
                             <h1>My Portfolio</h1>
-                            <h3>Useless Works</h3>
+                            <h2>Useless Works</h2>
                         </header>
                         <menu class="portfolio-menu">
                             <a href="" class="active">Frontend</a>
@@ -1376,7 +1389,7 @@
                 <div class="testimonial-container">
                     <header>
                         <h1>Testimonial</h1>
-                        <h3>People What Are Saying</h3>
+                        <h2>People What Are Saying</h2>
                     </header>
                     <div class="user-reviews">
                         <div class="user-review-box">
@@ -1433,7 +1446,7 @@
                 <div class="blog-container">
                     <header>
                         <h1>Blog Posts</h1>
-                        <h3>Read at your own Risk</h3>
+                        <h2>Read at your own Risk</h2>
                     </header>
 
                     <div class="blog-posts">
@@ -1444,7 +1457,7 @@
                                     <p class="blog-author"><i class="fa-solid fa-user"></i>Anonymous</p>
                                     <p class="blog-date"><i class="fa-regular fa-clock"></i>15 Falgun,2082</p>
                                 </div>
-                                <h2 class="blog-post-title">Useless Article Title</h2>
+                                <h3 class="blog-post-title">Useless Article Title</h3>
                             </div>
                         </div>
 
@@ -1456,7 +1469,7 @@
                                     <p class="blog-author"><i class="fa-solid fa-user"></i>Anonymous</p>
                                     <p class="blog-date"><i class="fa-regular fa-clock"></i>15 Falgun,2082</p>
                                 </div>
-                                <h2 class="blog-post-title">Useless Article Title</h2>
+                                <h3 class="blog-post-title">Useless Article Title</h3>
                             </div>
                         </div>
 
@@ -1468,7 +1481,7 @@
                                     <p class="blog-author"><i class="fa-solid fa-user"></i>Anonymous</p>
                                     <p class="blog-date"><i class="fa-regular fa-clock"></i>15 Falgun,2082</p>
                                 </div>
-                                <h2 class="blog-post-title">Useless Article Title</h2>
+                                <h3 class="blog-post-title">Useless Article Title</h3>
                             </div>
                         </div>
                     </div>
@@ -1481,7 +1494,7 @@
                 <div class="contact-container">
                     <header>
                         <h1>Contact</h1>
-                        <h3>Don't get in Touch</h3>
+                        <h2>Don't get in Touch</h2>
                     </header>
 
                     <div class="contact-box">
@@ -1519,7 +1532,7 @@
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.320247249892!2d83.44970487553356!3d27.506262776298552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39969b13f755b965%3A0x318a207b3da32d40!2sGraphilla%20Technology%20Private%20Limited!5e1!3m2!1sen!2snp!4v1773219843541!5m2!1sen!2snp"
                                     width="350" height="230" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    referrerpolicy="no-referrer-when-downgrade" title="Graphilla Technology Location"></iframe>
                             </div>
                         </div>
 
