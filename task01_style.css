@@ -173,7 +173,7 @@
   h1 {
       font-size: 2.5rem;
       font-weight: 600;
-      color: rgba(0, 0, 0, 0.15);
+      color: rgb(123, 123, 123);
 
   }
 
@@ -273,13 +273,20 @@
   }
 
   .about-details-list {
-      display: grid;
+      /* display: grid; */
       list-style-type: none;
       font-style: normal;
       font-size: 1.125rem;
       color: rgba(0, 0, 0, 0.7);
-      grid-template-columns: 1fr 1fr;
-      row-gap: 15px;
+      /* grid-template-columns: 1fr 1fr; */
+      /* row-gap: 15px; */
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+  }
+  .about-details-list li{
+    width: 48%;
   }
 
   .about-details-list i {
@@ -367,9 +374,10 @@
   }
 
   .resume-experience {
-      display: grid;
-      grid-template-columns: auto auto;
-      gap: 30px 100px;
+      display: flex;
+     justify-content: center;
+     gap: 2%;
+     flex-wrap: wrap;
   }
 
   .experience-box {
@@ -380,7 +388,8 @@
       display: flex;
       gap: 30px;
       line-height: 2;
-      max-width: 460px;
+    width: 40%;
+    margin-top: 16px;
   }
 
   .experience-box .icon {
@@ -404,13 +413,16 @@
 
 
   .resume-progress {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+
   }
 
   .resume-progress-box {
       /* width: 500px; */
+      width: 45%;
       font-size: 1.125rem;
       font-weight: 500;
       color: rgba(0, 0, 0, 0.7);
@@ -475,16 +487,23 @@
   }
 
   .service-boxes {
-      display: grid;
+      /* display: grid;
       grid-template-columns: auto auto auto;
       justify-content: center;
       grid-auto-flow: row;
-      gap: 40px 15px;
-      padding: 30px;
+      gap: 40px 15px; */
+      display: flex;
+      flex-wrap: wrap;
+justify-content: center;
+
+
+      /* padding: 30px; */
   }
 
 
   .service-box {
+    margin: 10px;
+    width: 30%;
       box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.068);
       border-radius: 15px;
       min-width: 260px;
@@ -680,14 +699,14 @@
   .portfolio-gallery {
       margin: 40px 0;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: auto auto auto;
       padding: 10px;
       gap: 30px;
   }
 
   .portfolio-gallery-box {
       border-radius: 10px;
-      overflow: hidden !important;
+      overflow: hidden;
       margin: 0;
       padding: 0;
       position: relative;
@@ -744,8 +763,6 @@
 
   .portfolio-gallery-box:nth-child(1) {
       grid-row: 1 / span 5;
-      grid-column-start: 1;
-      grid-column-end: 4;
   }
 
   .portfolio-gallery-box:nth-child(2) {
@@ -788,14 +805,15 @@
   }
 
   .user-reviews {
-      /* overflow-x: scroll; */
       display: flex;
-      align-items: center;
       gap: 50px;
-      justify-content: space-evenly;
+      justify-content: center;
+      flex-wrap: wrap;
+
   }
 
   .user-review-box {
+    width: 40%;
       max-width: 600px;
       /* min-width: 500px; */
       padding: 50px;
@@ -826,10 +844,10 @@
   }
 
   .user-photo {
-      border: 1px solid rgb(255, 255, 255);
+      border: 1px solid rgb(16, 8, 8);
       /* outline: 1px solid black; */
       height: 50px;
-      width: 50px;
+      min-width: 50px;
       border-radius: 25px;
       overflow: hidden;
 
@@ -988,400 +1006,177 @@
 
   /* contact section: end  */
 
+/* x-small devices  */
+@media (min-width:350px) and (max-width:576px) {
 
+    .sidebar{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
 
-  /* responsive  */
-  @media (max-width:350px) {
-      .hero-header-button {
-          display: none;
-      }
+    .hero-header-button{
+        display: none;
+    }
 
-      .hero-header-contact span {
-          margin-left: 20px;
-      }
+    .hero-container{
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+        align-items: flex-start;
+    }
 
-      iframe {
-          width: 100%;
-      }
+    .hero-intro{
+        width: 100%;
+    }
+    .hero-social-buttons{
+        flex-direction: row;
+    }
+    .service-box{
+        width: 100%;
+    }
 
+    
+  .resume-progress-box{
+    width: 100%;
   }
-
-  @media screen and (min-width:350px) and (max-width:576px) {
-
-      /* 
-            html{
-                font-size: 12px;
-            } */
-      .hero-intro {
-          width: 100%;
-
-      }
-
-      .faq-container {
-          padding: 60px 25px;
-      }
-
-      .faq-group {
-          width: 80%;
-      }
-
-      .about-container {
-          padding: 90px 20px;
-      }
-
-      .about-details-list {
-          grid-template-columns: auto;
-      }
-
-
-      .about-stats-box {
-          width: 100%;
-      }
-
-
-      .contact-box {
-          flex-direction: column;
-          padding: 20px 0;
-          gap: 60px;
-      }
-
-      .contact-form {
-          width: 100%;
-      }
-
-      .user-reviews {
-          flex-direction: column;
-      }
-
-      .resume-progress {
-          grid-template-columns: auto;
-      }
-
-      .hero-container {
-          flex-direction: column;
-          gap: 40px;
-          align-items: flex-start;
-      }
-
-      .hero-social-buttons {
-          flex-direction: row;
-      }
-
-      .portfolio-top {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 40px;
-      }
-
-      .portfolio-menu a.active::after {
-          display: none;
-      }
-
-      .portfolio-gallery {
-          /* display: flex;
-    flex-direction: column; */
-          /* grid-template-columns: auto; */
-      }
-
-      .service-box {
-          width: 80%;
-      }
-
-      .service-boxes {
-          width: 100%;
-      }
-
-  }
-
-
-  @media (min-width:576px) and (max-width:768px) {
-
-      .faq-container {
-          padding: 60px 25px;
-      }
-
-      .faq-group {
-          width: 80%;
-      }
-
-      .resume-experience,
-      .service-boxes {
-          grid-template-columns: auto !important;
-      }
-
-  }
-
-
-  @media (max-width:768px) {
-      .blog-container {
-          padding: 90px 20px;
-      }
-
-      .post-details {
-          padding: 10px 20px;
-      }
-
-      .sidebar {
-          display: none;
-      }
-
-      .resume-experience {
-          grid-template-columns: auto auto;
-          gap: 30px;
-      }
-
-      .experience-box {
-          padding: 30px;
-      }
-
-      main {
-          width: 100%;
-      }
-
-      .faq-container {
-          padding: 60px 25px;
-      }
-
-      .faq-group {
-          width: 80%;
-      }
-
-      .service-boxes {
-          grid-template-columns: auto auto;
-      }
-
-      .service-box {
-          padding: 30px 20px;
-      }
-
-      .portfolio-gallery {
-          grid-template-columns: auto;
-      }
-
-      .portfolio-menu {
-          margin-right: 0;
-      }
-
-      .portfolio-container {
-          padding: 90px 30px;
-      }
-
-      .contact-box {
-          padding: 20px 0;
-          gap: 20px;
-      }
-
-      .about-info {
-          flex-direction: column;
-      }
-
-
-  }
-
-
-  @media (min-width:769px) and (max-width:1024px) {
-
-      /* html{
-                font-size: 14px;
-*/
-      .user-review-box {
-          padding: 10px 20px;
-      }
-
-      .about-stats-box {
-          padding: 20px 10px;
-      }
-
-      .sidebar {
-          width: 20%;
-      }
-
-      main {
-          width: 80%;
-      }
-
-      .about-text {
-          width: 100%;
-      }
-
-      /* .blog-posts{
-            } */
-      .service-boxes {
-          grid-template-columns: auto auto;
-      }
-
-
-      .service-container {
-          margin-left: 100px;
-          margin-right: 100px;
-      }
-
-      .user-reviews {
-          align-items: center;
-          gap: 10px;
-          justify-content: center;
-          width: 100%;
-      }
-
-      .resume-experience {
-          grid-template-columns: auto auto;
-      }
-
-      .resume-progress {
-          grid-template-columns: auto;
-      }
-
-      .contact-box {
-          padding: 0;
-      }
-
-      .contact-form {
-          width: 100%;
-      }
-
-      .about-container {
-          padding: 25px;
-      }
-
-      .about-stats {
-          justify-content: center;
-      }
-
-      /* .resume-progress-box */
-  }
-
-
-
-  @media screen and (min-width:1640px) {
-      .user-reviews {
-          gap: 20;
-          justify-content: center;
-      }
-
-      .hero-container {
-          padding: 300px;
-      }
-
-      .sidebar {
-          width: 10%;
-      }
-
-      main {
-          width: 90%;
-      }
-
-      .faq-group {
-          padding: 0 350px;
-      }
-
-      .about-container {
-          margin: 200px 400px;
-      }
-
-      .about-stats {
-          margin-top: 100px;
-      }
-
-      .resume-progress {
-          width: 55%;
-          margin-top: 100px;
-      }
-
-      .portfolio-container,
-      .contact-container {
-          margin-right: 400px;
-          margin-left: 400px;
-      }
-  }
-
-
-  .portfolioContainer {
-      display: grid;
-      grid-template-rows: 100px 100px 100px 100px 100px 100px;
-      grid-template-columns: auto auto auto;
-
-  }
-
-  .portfolioContainer-individual5 {
-      border-radius: 10px;
-      overflow: hidden;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      border: 1px solid red;
-      position: relative;
-  }
-
-
-
-  .portfolioContainer-individual-image {
-      height: 100%;
-      width: 100%;
-  }
-
-
-  .portfolioContainer-individual-content h3 {
-      color: black;
-  }
-
-  .portfolioContainer-individual-image img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-  }
-
-  .contentWrapper {
-      height: 100%;
-      width: 100%;
-      padding-left: 10px;
-      background-color: rgba(0, 0, 0, 0.3);
-      justify-content: center;
-      /* align-items: center; */
-      flex-direction: column;
-      text-align: left !important;
-      display: none;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-
-  }
-
-  .portfolioContainer-individual5:hover .contentWrapper {
-      display: flex;
-  }
-
-  .portfolioContainer-individual5:hover .portfolioContainer-individual-image img {
-      transform: scale(1.2);
-  }
-
-
-  @media screen and (max-width:420px) {
-      .portfolioContainer {
-          grid-template-columns: auto;
-      }
-
-  }
-
-  .testimonialsWrapper{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
-  }
-
-  .testimonialsWrapper-image{
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    border: 1px solid red;
-  }
-  
-
-  .testimonialsWrapper-content p{
-color: #140909;
-  }
+    .contact-box{
+        flex-direction: column;
+        padding: 0;
+    }
+    .experience-box{
+            width: 100%;
+
+    }
+
+    .portfolio-container,.about-container,.faq-container,.testimonial-container,.contact-container{
+        padding: 90px 10px;
+    }
+
+    .portfolio-top,.about-info{
+        flex-direction: column;
+    }
+    .testimonial-container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .about-stats-box{
+        width: 100%;
+    }
+    
+    .user-review-box{
+        width: 100%;
+    }
+
+    .faq-group{width: 80%;}
+     .about-details-list li{
+        width: 100%;
+     }
+
+.contact-box{
+
+    gap: 50px;
+    padding: 20px;
+}
+     .contact-form{
+        width: 100%;
+     }
+
+     iframe{
+        width: 300px;
+     }
+
+     .blog-post-meta{
+        flex-direction: column;
+     }
+
+
+     .portfolio-top{
+        align-items: center;
+     }
+
+     .portfolio-gallery{
+        grid-template-columns: auto;
+     }
+
+     .portfolio-menu a.active::after{
+display: none;
+     }
+
+     .portfolio-gallery-box{
+        grid-row: auto / span 1 !important;
+     }
+}
+
+
+
+
+/* small devices  */
+@media (min-width:576px) and (max-width:768px) {
+     .sidebar{
+        display: none;
+    }
+     main{
+        width: 100%;
+    }
+    .portfolio-menu{
+        margin-right: 0;
+    }
+
+    .contact-box{
+        padding: 0;
+        gap: 40px;
+    }
+    .portfolio-menu a.active::after{
+display: none;
+     }
+
+      .portfolio-container,.about-container,.faq-container,.testimonial-container,.contact-container{
+        padding: 90px 30px;
+    }
+
+    .about-text{
+        width: 95%;
+    }
+    .experience-box{
+        width: min-content;
+    }
+}
+
+
+/* medium devices  */
+@media (min-width:768px) and (max-width:993px) {
+    
+}
+
+
+/* large devices  */
+@media (min-width:993px) and (max-width:1200px) {
+    .sidebar{width: 15%;}
+    main{width: 85%;}
+
+    .portfolio-container,.about-container,.faq-container,.testimonial-container,.contact-container{
+        padding: 90px 50px;
+    }
+
+    .contact-box{
+        padding: 0;
+        gap: 25px;
+    }
+    .about-image{
+        width: 40%;
+    }
+    .about-text{
+        width: 55%;
+    }
+    
+}
+
+
+
+/* x-large devices  */
+@media (min-width:1200px) and (max-width:1440px) {
+    
+}
